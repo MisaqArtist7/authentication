@@ -22,8 +22,8 @@ export default function SignUp() {
               <input type="text" placeholder='At least 8 characters' className='bg-[#F7FBFF] border border-[#D4D7E3] py-2 px-3 rounded-xl placeholder:text-[#8897AD]'/>
             </div>
             <div className='flex flex-col justify-center items-end gap-3 mt-3'>
-              <span className='text-[#1E4AE9]'>Forgot Password?</span>
-              <button type='submit' className='w-full py-2.5 bg-[#162D3A] text-white rounded-xl'>Sign in</button>
+              <span className='text-[#1E4AE9] hover:cursor-pointer'>Forgot Password?</span>
+              <button type='submit' className='w-full py-2.5 bg-[#162D3A] hover:bg-[#17252d] text-white rounded-xl'>Sign in</button>
             </div>
           </form>
 
