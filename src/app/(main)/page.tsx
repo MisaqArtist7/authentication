@@ -1,14 +1,26 @@
+"use client";
 import React from 'react'
 import Image from 'next/image'
+import z from 'zod';
 import { useForm } from "react-hook-form";
 import { zodResolver } from '@hookform/resolvers/zod';
-import { signUpSchema, SignUpSchemaType } from '@/validations/signUpSchema';
 
 export default function SignUp() {
   
+  const signUpSchema = z.object({
+    email: z.string().email({message: "please enter valid email"}),
+    password: z.string().min(8, {message: "password must be 8 characters"})
+  })
+
+  type SignUpSchemaType = z.infer<typeof signUpSchema>
+
   const { register, handleSubmit, formState: { errors } } = useForm<SignUpSchemaType>({
     resolver: zodResolver(signUpSchema)
   })
+
+  const onSubmit = (data : SignUpSchemaType) => {
+    console.log(data)
+  }
 
   return (
     <section className='container flex flex-col-reverse gap-7 md:gap-0 md:flex-row items-center justify-center min-h-screen my-3 xl:my-0'>
