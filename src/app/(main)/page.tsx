@@ -38,13 +38,13 @@ export default function SignUp() {
             <div className='flex justify-center items-center gap-2 w-full py-2.5 bg-[#F3F9FA] rounded-xl border border-gray-200'>
               <div className='flex items-center justify-start gap-2 w-[80%] md:w-[55%] xl:w-[60%] lg:w-[40%] xl:text-[16px] text-[14.5px]'>
                 <Image src="/images/Google.svg" alt="" width={25} height={0}/>
-                <span className='text-[#313957]'>Sign in with Google</span>  
+                <span className='text-[#313957] hover:cursor-pointer'>Sign in with Google</span>  
               </div>
             </div> 
             <div className='flex justify-center items-center gap-2 w-full py-2.5 bg-[#F3F9FA] rounded-xl border border-gray-200'>
               <div className='flex items-center justify-start gap-2 w-[80%] md:w-[55%] xl:w-[60%] lg:w-[40%] xl:text-[16px] text-[14.5px]'>
                 <Image src="/images/Facebook.svg" alt="" width={25} height={0}/>
-                <span className='text-[#313957]'>Sign in with Facebook</span>  
+                <span className='text-[#313957] hover:cursor-pointer'>Sign in with Facebook</span>  
               </div>
             </div> 
 
