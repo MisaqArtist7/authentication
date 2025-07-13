@@ -30,21 +30,24 @@ const signUpSchema = z.object({
   }
 
   return (
-    <section className='container flex flex-col-reverse gap-7 md:gap-0 md:flex-row items-center justify-center min-h-screen my-3 xl:my-0'>
-      <div>
-        <div className='w-[90%] xl:w-[55%] mx-auto'>
+    <section className='container flex flex-col-reverse gap-7 w-full lg:gap-3 md:flex-row items-center justify-center min-h-screen'>
+        <div className='absolute right-0 top-0'>
+          <img src="/images/Decore.svg" alt="" />
+        </div>
+        <div className='p-1 bg'>
+          <Image src="/images/Art.svg" alt="" width={505} height={0}/>
+        </div>
 
-          <div className='flex flex-col gap-5 justify-center'>
-            <h2 className='text-[var(--primary-color)] font-semibold text-3xl text-center md:text-left md:text-4xl'>Welcome 👋</h2>
-            <p className='text-center md:text-left'>Today is a new day. It&apos;s your day. You shape it. 
-            Sign in to start managing your projects.</p>
+        <div className='w-[90%] xl:w-[40%] z-50'>
+          <div>
+            <h1 className='pt-7 font-semibold text-4xl text-center'>Welcome to Heaven Flower</h1>
           </div>
 
-          <form onSubmit={handleSubmit(onSubmit)} action="" className='my-7 flex flex-col gap-3'>
+          <form onSubmit={handleSubmit(onSubmit)} action="" className='my-3 flex flex-col gap-3'>
             <div className='flex flex-col justify-center gap-1'> 
-              <label htmlFor="">Email</label>
+              <label htmlFor="">Full name:</label>
               <input {...register("email")}
-               type="text" placeholder='Example@email.com' className='bg-[#F7FBFF] border border-[#D4D7E3] py-2 px-3 rounded-xl placeholder:text-[#8897AD]'/>
+               type="text" placeholder='Enter your full name' className='bg-[#F7FBFF] border border-[#D4D7E3] py-2 px-3 rounded-lg placeholder:text-[#8897AD]'/>
               {errors.email && (
                 <span className='text-red-500 text-sm'>
                   {errors.email.message}
@@ -52,9 +55,29 @@ const signUpSchema = z.object({
               )}
             </div>
             <div className='flex flex-col justify-center gap-1'> 
-              <label htmlFor="">Password</label>
+              <label htmlFor="">Email:</label>
+              <input {...register("email")}
+               type="text" placeholder='Enter your email' className='bg-[#F7FBFF] border border-[#D4D7E3] py-2 px-3 rounded-lg placeholder:text-[#8897AD]'/>
+              {errors.email && (
+                <span className='text-red-500 text-sm'>
+                  {errors.email.message}
+                </span>
+              )}
+            </div>
+            <div className='flex flex-col justify-center gap-1'> 
+              <label htmlFor="">Password:</label>
               <input {...register("password")}
-              type="text" placeholder='At least 8 characters' className='bg-[#F7FBFF] border border-[#D4D7E3] py-2 px-3 rounded-xl placeholder:text-[#8897AD]'/>
+              type="text" placeholder='Enter your password' className='bg-[#F7FBFF] border border-[#D4D7E3] py-2 px-3 rounded-lg placeholder:text-[#8897AD]'/>
+              {errors.password && (
+                <span className='text-red-500 text-sm'>
+                  {errors.password.message}
+                </span>
+              )}
+            </div>
+            <div className='flex flex-col justify-center gap-1'> 
+              <label htmlFor="">Re-Password:</label>
+              <input {...register("password")}
+              type="text" placeholder='Re-enter your password' className='bg-[#F7FBFF] border border-[#D4D7E3] py-2 px-3 rounded-lg placeholder:text-[#8897AD]'/>
               {errors.password && (
                 <span className='text-red-500 text-sm'>
                   {errors.password.message}
@@ -62,7 +85,7 @@ const signUpSchema = z.object({
               )}
             </div>
             <div className='flex flex-col justify-center items-end gap-3 mt-3'>
-              <span className='text-[#1E4AE9] hover:cursor-pointer'>Forgot Password?</span>
+              <span className='text-[#1E4AE9]'>Remember me! <input type="checkbox" /></span>
               <button type='submit' className='w-full py-2.5 bg-[#162D3A] hover:bg-[#17252d] text-white rounded-xl'>Sign up</button>
             </div>
           </form>
@@ -76,15 +99,15 @@ const signUpSchema = z.object({
           <div className='my-5 flex justify-between items-center md:flex md:flex-col gap-2'>
 
             <div className='flex justify-center items-center gap-2 w-full py-2.5 bg-[#F3F9FA] rounded-xl border border-gray-200'>
-              <div className='flex items-center justify-start gap-2 w-[80%] md:w-[55%] xl:w-[60%] lg:w-[40%] xl:text-[16px] text-[14.5px]'>
+              <div className='flex items-center justify-start gap-2 w-[80%] md:w-[55%] xl:w-[50%] lg:w-[40%] xl:text-[16px] text-[14.5px]'>
                 <Image src="/images/Google.svg" alt="" width={25} height={0}/>
-                <span className='text-[#313957] hover:cursor-pointer'>Sign in with Google</span>  
+                <span className='text-[#313957] hover:cursor-pointer'>Sign up with Google</span>  
               </div>
             </div> 
             <div className='flex justify-center items-center gap-2 w-full py-2.5 bg-[#F3F9FA] rounded-xl border border-gray-200'>
-              <div className='flex items-center justify-start gap-2 w-[80%] md:w-[55%] xl:w-[60%] lg:w-[40%] xl:text-[16px] text-[14.5px]'>
+              <div className='flex items-center justify-start gap-2 w-[80%] md:w-[55%] xl:w-[50%] lg:w-[40%] xl:text-[16px] text-[14.5px]'>
                 <Image src="/images/Facebook.svg" alt="" width={25} height={0}/>
-                <span className='text-[#313957] hover:cursor-pointer'>Sign in with Facebook</span>  
+                <span className='text-[#313957] hover:cursor-pointer'>Sign up with Facebook</span>  
               </div>
             </div> 
 
@@ -93,11 +116,8 @@ const signUpSchema = z.object({
           <div className='flex-row-center mt-9'>
             <span className='text-[#313957] text-[15px]'>Already have an account! <Link href="/" className='text-[#1E4AE9] border-b hover:border-none hover:cursor-pointer'>Login</Link></span>
           </div>
+          
         </div>
-      </div>
-      <div>
-        <Image src="/images/Art.svg" alt="" width={555} height={0}/>
-      </div>
     </section>
   )
 }

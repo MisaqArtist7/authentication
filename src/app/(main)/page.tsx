@@ -96,7 +96,7 @@ const signUpSchema = z.object({
         </div>
       </div>
       <div>
-        <Image src="/images/Art.svg" alt="" width={555} height={0}/>
+        <Image src="/images/flower.svg" alt="" width={555} height={0}/>
       </div>
     </section>
   )
