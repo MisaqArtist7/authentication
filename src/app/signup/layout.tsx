@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Login | HeavenFLower",
+  title: "Sign up | HeavenFlower",
   description: "Login and sign up page with next.js architecture",
 };
 

@@ -5,8 +5,8 @@ import z from 'zod';
 import { useForm } from "react-hook-form";
 import { zodResolver } from '@hookform/resolvers/zod';
 import Link from 'next/link';
-
-export default function Login() {
+export default function SignUp() {
+  
 const signUpSchema = z.object({
   email: z.string().email({ message: "please enter valid email" }),
   password: z.string()
@@ -35,7 +35,7 @@ const signUpSchema = z.object({
         <div className='w-[90%] xl:w-[55%] mx-auto'>
 
           <div className='flex flex-col gap-5 justify-center'>
-            <h2 className='text-[var(--primary-color)] font-semibold text-3xl text-center md:text-left md:text-4xl'>Welcome Back  👋</h2>
+            <h2 className='text-[var(--primary-color)] font-semibold text-3xl text-center md:text-left md:text-4xl'>Welcome 👋</h2>
             <p className='text-center md:text-left'>Today is a new day. It&apos;s your day. You shape it. 
             Sign in to start managing your projects.</p>
           </div>
@@ -63,7 +63,7 @@ const signUpSchema = z.object({
             </div>
             <div className='flex flex-col justify-center items-end gap-3 mt-3'>
               <span className='text-[#1E4AE9] hover:cursor-pointer'>Forgot Password?</span>
-              <button type='submit' className='w-full py-2.5 bg-[#162D3A] hover:bg-[#17252d] text-white rounded-xl'>Sign in</button>
+              <button type='submit' className='w-full py-2.5 bg-[#162D3A] hover:bg-[#17252d] text-white rounded-xl'>Sign up</button>
             </div>
           </form>
 
@@ -91,7 +91,7 @@ const signUpSchema = z.object({
           </div>
 
           <div className='flex-row-center mt-9'>
-            <span className='text-[#313957] text-[15px]'>Don&apos;t you have an account? <Link href="/signup" className='text-[#1E4AE9] border-b hover:border-none hover:cursor-pointer'>Sign up</Link></span>
+            <span className='text-[#313957] text-[15px]'>Already have an account! <Link href="/" className='text-[#1E4AE9] border-b hover:border-none hover:cursor-pointer'>Login</Link></span>
           </div>
         </div>
       </div>
