@@ -4,6 +4,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(252, 252, 252);
 }
 :root{
   --primary-color: #0C1421;
@@ -34,8 +35,8 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 2rem;  
-    padding-right: 2rem;
+    padding-left: 1.7rem;  
+    padding-right: 1.7rem;
 
     /* Breakpoints */
     @media (min-width: 40rem) { /* 640px */
