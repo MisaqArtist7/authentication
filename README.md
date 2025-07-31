@@ -1,6 +1,15 @@
 🔐  Authentication APP
 
-✨ Features
+A modern and responsive authentication page built with:
+
+- ✅ **Next.js** & **TypeScript**
+- 🧠 **Zod** for schema-based validation
+- 🪝 **React Hook Form** for form state handling
+- ✨ Includes:
+  - Email validation
+  - Strong password rules (uppercase, lowercase, min length)
+  - Confirm password match
+  - Mobile responsive design
 -------------------------------------   
 📸 Screenshots
 
