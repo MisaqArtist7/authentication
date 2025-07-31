@@ -14,10 +14,6 @@
 
 ![UI Image](public/images/screenshots/5.png)
 
-![UI Image](public/images/screenshots/6.png)
-
-![UI Image](public/images/screenshots/7.png)
-
 -------------------------------------
 🚀 How to install and run
 - git clone https://github.com/MisaqArtist7/authentication.git
