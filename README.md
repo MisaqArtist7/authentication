@@ -3,7 +3,7 @@
 ✨ Features
 -------------------------------------   
 📸 Screenshots
-![UI Image]("\public\images\screenshots\1.png")
+![UI Image]("public/images/screenshots/1.png")
 
 
 -------------------------------------
