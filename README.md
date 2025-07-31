@@ -1,3 +1,12 @@
+🔐  Authentication APP
+
+
+-------------------------------------   
+📸 Screenshots
+
+
+
+-------------------------------------
 🚀 How to install and run
 - git clone https://github.com/MisaqArtist7/authentication.git
 - cd authentication
