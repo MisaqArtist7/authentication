@@ -31,4 +31,5 @@ A modern and responsive authentication page built with:
 - npm run dev
 - Open http://localhost:3000 in your browser.
 
-- Preview: https://authentication-aomwv5043-jirans-projects.vercel.app/signup
+- Preview: https://authentication-three-sooty.vercel.app
+
